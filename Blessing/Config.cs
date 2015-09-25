@@ -36,8 +36,8 @@ namespace Blessing
 			string content2 = re.Replace(content, "");
 
 			// 直接找出 width 和 height
-			Width = Convert.ToUInt32(Find(content2, "width"));
-			Height = Convert.ToUInt32(Find(content2, "height"));
+			Width = Convert.ToUInt32(Find(content2, "WidthFullscreen"));
+			Height = Convert.ToUInt32(Find(content2, "HeightFullscreen"));
 		}
 
 		public static string Find(string content, string key)
