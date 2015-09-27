@@ -16,7 +16,7 @@ namespace Blessing
 		public uint Height { get; private set; }
 
 		private string content;
-		readonly string Path;
+		private readonly string Path;
 		
 		public Config(string Path)
 		{

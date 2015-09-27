@@ -13,7 +13,7 @@ namespace Blessing
 
 		internal StringBuilder ContentBuilder;
 
-		readonly string Path;
+		private readonly string Path;
 
 		public Skin(string Path)
 		{
@@ -83,7 +83,7 @@ namespace Blessing
 	{
 		private Skin Skin;
 
-		readonly string Name;
+		private readonly string Name;
 		internal Dictionary<string, Line> Lines = new Dictionary<string, Line>();
 
 		private string Content;
@@ -159,8 +159,8 @@ namespace Blessing
 		private StringBuilder ContentBuilder;
 
 		internal object Value;
-		readonly string OriginalValue;
-		readonly int ValueIndex;
+		private readonly string OriginalValue;
+		private readonly int ValueIndex;
 
 		/// <summary>
 		/// 
